@@ -148,7 +148,7 @@ func computeMD5String(filePath string) (string, error) {
 
 func collectExcludePaths(homeDir, projectDir string) []string {
 	excludePths := []string{
-		"~/.gradle/**",
+		// "~/.gradle/**",
 		"!~/.gradle/daemon/*/daemon-*.out.log", // excludes Gradle daemon logs, like: ~/.gradle/daemon/6.1.1/daemon-3122.out.log
 		"~/.android/build-cache/**",
 		"*.lock",
